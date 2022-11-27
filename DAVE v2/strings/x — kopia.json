@@ -1,0 +1,332 @@
+{
+    "ENG": {
+        "functions": {
+            "dave":{
+                "start":"----Starting ",
+                "listen":"listening...",
+                "user":"Me --> ",
+                "wait":"---waiting for new response---"
+            },
+            "notes":{
+                "wait":"---waiting for note content---",
+                "not_understood":"Sorry i did not understand you. Retrying to write the Note again",
+                "write":"You want to write the following.    $noteContent. Is that Right?",
+                "name":"Whats the name of your note?",
+                "name_affirmation":"The name of your note is $NoteName is that right?",
+                "created":"The Note $NoteName was successfully created with the content $noteContent",
+                "negation":"Retrying to write the Note again",
+                "content":"What do you want to write down on your note?"
+            },
+            "runapps":{
+                "success":"running app ",
+                "failure":"can't run app"
+            },
+            "time":"It's $hour $minute.",
+            "day":"Today its $date $mdayth of the $mon of the $year.",
+			"langswitch":{
+				"commands":[
+                    "change language to",
+                    "switch language to",
+                    "change to",
+                    "switch to",
+                    "language"
+				],
+                "langeng":"english",
+                "langesp":"spanish",
+                "langpol":"polish",
+                "success":"successfully changed language to "
+			}
+        },
+        "wakewords":{
+            "kys":[
+                "kill yourself",
+                "quit",
+                "close"
+            ],
+            "day":[
+                "what day is today",
+                "day",
+                "what date is today",
+                "date"
+            ],
+            "affirmation":[
+                "yes"
+            ],
+            "negation":[
+                "no"
+            ],
+            "normal":[
+                "hey dave",
+                "dave",
+                "hey"
+            ],
+            "notes":[
+                "i want to write a note",
+                "dave write this down",
+                "write a new note",
+                "write this dave",
+                "write this down",
+                "write this",
+                "write a note",
+                "new note",
+                "a note",
+                "note"
+            ],
+            "runapps":[
+                "run",
+                "open"
+            ],
+            "system":[
+                "system"
+            ],
+            "time":[
+                "what time is it",
+                "tell me the time",
+                "time",
+                "tell me the hour",
+                "what hour is it",
+                "hour"
+            ]
+            
+        },
+        "answers":{
+            "kys":[
+                "gunshot",
+                "you fucking concratemixer, 4",
+                "pope fucks little children",
+                "ok, i will cut myself"
+            ],
+            "normal":[
+                "In what can i help you?",
+                "Yes Master?",
+                "What do you need?",
+                "Hello I am dave! Tell me what you need."
+            ]
+            ,
+            "notes":
+                "Of course, what do you want to write down on your note?"
+            ,
+            "system":
+            "I am Dave, your own personal AI.\n           Software Version 0.0.3. Currently I am capable of telling day and time, writing notes down"
+            
+        }
+    },
+    "POL": {
+        "functions": {
+            "dave":{
+                "start":"----Włączam ",
+                "listen":"Słucham...",
+                "user":"Ja --> ",
+                "wait":"---Czekam na odpowiedź---"
+            },
+            "notes":{
+                "wait":"---Czekam na treść notatki---",
+                "not_understood":"Przepraszam, nie zrozumiałem cię. Próbuję ponownie napisać notatkę",
+                "write":"Chcesz napisać następujący tekst. $noteContent. Czy to prawda?",
+                "name": "Jak nazywa się twoja notatka?",
+                "name_affirmation":"Nazwa twojej notatki to $NoteName, czy to prawda?",
+                "created":"Notatka $NoteName została pomyślnie utworzona z treścią $noteContent",
+                "negation": "Ponowna próba napisania notatki",
+                "content":"Co chcesz zapisać w notatce?"
+            },
+            "runapps":{
+                "success": "uruchomiono aplikację",
+                "failure": "nie można uruchomić aplikacji"
+            },
+            "time": "Jest $hour $minute.",
+            "day":"Dzisiaj jest $date $mday $mon $year.",
+            "langswitch":{
+                "commands":[
+                    "zmień język na",
+                    "zmień na",
+                    "Przełącz na",
+                    "język"
+                ],
+                "langeng": "angielski",
+                "langesp": "hiszpański",
+                "langpol": "polski",
+                "success": "pomyślnie zmieniono język na "
+                }
+        },
+        "wakewords":{
+            "kys":[
+                "zabij się",
+                "wyłącz się",
+                "zamknij się"
+            ],
+            "day":[
+                "jaki jest dziś dzień",
+                "dzień",
+                "który jest dzisiaj",
+                "data"
+            ],
+            "affirmation":[
+                "tak"
+            ],
+            "negation":[
+                "nie"
+            ],
+            "normal":[
+                "hej dejw",
+                "dejw",
+                "hej"
+            ],
+            "notes":[
+                "chcę napisać notatkę",
+                "dejw zapisz to",
+                "napisz nową notatkę",
+                "napisz to dejw",
+                "zapisz to",
+                "napisz to",
+                "napisz notatkę",
+                "nowa notatka",
+                "notatka"
+            ],
+            "runapps":[
+                "włącz",
+                "otwórz"
+            ],
+            "system":[
+                "system"
+            ],
+            "time":[
+                "która godzina",
+                "powiedz mi czas",
+                "czas",
+                "powiedz mi godzinę",
+                "która jest godzina",
+                "godzina"
+            ]
+            
+        },
+        "answers":{
+            "kys":[
+                "*strzał*",
+                "ty jebany betoniarzu, 4",
+                "papież jebał małe dzieci",
+                "ok, zaraz się potnę"
+            ],
+            "normal":[
+                "W czym mogę Ci pomóc?",
+                "Tak mistrzu?",
+                "Czego potrzebujesz?",
+                "Cześć, jestem Dejw! Powiedz mi, czego potrzebujesz."
+            ]
+            ,
+            "notes":
+                "Oczywiście, co chcesz napisać w swojej notatce?"
+            ,
+            "system":
+            "Jestem Dejw, twoja osobista sztuczna inteligencja.\n          Wersja oprogramowania 0.0.3. Obecnie jestem w stanie określić dzień i godzinę i zapisać notatki"
+            
+        }
+    },
+    "ESP": {
+        "functions": {
+            "dave":{
+                "start":"----Iniciando",
+                "listen":"escuchando...",
+                "user":"Yo --> ",
+                "wait":"---esperando una nueva respuesta---"
+            },
+            "notes":{
+                "wait":"---esperando el contenido de la nota---",
+                "not_understood":"Lo siento, no te entendí. Volviendo a intentar escribir la Nota de nuevo",
+                "write":"Quieres escribir lo siguiente. $noteContent. ¿Es así?",
+                "name":"¿Cuál es el nombre de tu nota?",
+                "name_affirmation":"El nombre de tu nota es $NoteName, ¿verdad?",
+                "created":"La nota $NoteName se creó con éxito con el contenido $noteContent",
+                "negation":"Reintentando escribir la Nota de nuevo",
+                "content":"¿Qué quieres escribir en tu nota?"
+            },
+            "runapps":{
+                "success":"aplicación en ejecución",
+                "failure":"no se puede ejecutar la aplicación"
+            },
+            "time":"Son $hour $minute.",
+            "day":"Hoy es la $date el $mday del $mon del $year.",
+            "langswitch":{
+                "commands":[
+                    "cambiar el idioma a",
+                    "cambiar a",
+                    "idioma"
+                ],
+                "langeng":"inglés",
+                "langesp":"espanol",
+                "langpol":"polaco",
+                "success":"cambió con éxito el idioma a "
+            }
+        },
+        "wakewords":{
+            "kys":[
+                "matarte a ti mismo",
+                "abandonar",
+                "cerca"
+            ],
+            "day":[
+                "Qué día es hoy",
+                "día",
+                "Qué día es hoy",
+                "fecha"
+            ],
+            "affirmation":[
+                "sí"
+            ],
+            "negation":[
+                "no"
+            ],
+            "normal":[
+                "hola dave",
+                "dave",
+                "Oye"
+            ],
+            "notes":[
+                "quiero escribir una nota",
+                "dave escribe esto",
+                "escribir una nueva nota",
+                "escribe esto dave",
+                "escribe esto",
+                "escribe una nota",
+                "nueva nota",
+                "Nota"
+            ],
+            "runapps":[
+                "correr",
+                "abierto"
+            ],
+            "system":[
+                "sistema"
+            ],
+            "time":[
+                "Qué hora es",
+                "Dime la hora",
+                "tiempo",
+                "dime la hora",
+                "Que hora es",
+                "hora"
+            ]
+            
+        },
+        "answers":{
+            "kys":[
+                "cañonazo",
+                "Maldito mezclador de cemento, 4",
+                "el papa se folla a los niños pequeños",
+                "Está bien, me cortaré"
+            ],
+            "normal":[
+                "¿En qué puedo ayudarte?",
+                "¿Si señor?",
+                "¿Que necesitas?",
+                "¡Hola, soy Dave! Dime qué necesitas."
+            ]
+            ,
+            "notes":
+                "Por supuesto, ¿qué quieres escribir en tu nota?"
+            ,
+            "system":
+            "Soy Dave, tu propia IA personal.\n Versión de software 0.0.3. Actualmente soy capaz de decir el día y la hora, escribiendo notas"
+            
+        }
+    }
+}
