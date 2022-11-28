@@ -19,7 +19,7 @@ class ChatBot():
         # self.langlist=['en-US', 0]
         self.lang="POL"
         self.langlist=['pl', 3]
-        x=open("DAVE v2\\strings\\x.json",encoding='utf-8')
+        x=open("DAVE v2\\strings\\x.json",encoding='cp1250')
         self.strings=json.load(x)
         print(self.strings[self.lang]['functions']['dave']['start'] + name ,"----")
 
