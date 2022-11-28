@@ -6,9 +6,9 @@ from datetime import datetime as date
 import random
 import sys
 import threading
-from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtGui import QMovie
-from PyQt5.QtCore import Qt
+# from PyQt5 import QtCore, QtGui, QtWidgets
+# from PyQt5.QtGui import QMovie
+# from PyQt5.QtCore import Qt
 import json
 
 
