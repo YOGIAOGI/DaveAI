@@ -112,7 +112,21 @@ class ChatBot():
         speaker.runAndWait()
 
     def run_app(self, app):
-        os.startfile(f'{app}')
+        try:
+            os.startfile(app)
+        except FileNotFoundError:
+            try:
+                os.startfile(f'C:\\Users\\Adam i koniec\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\{app}')
+                res = self.strings[self.lang]['functions']['runapps']['success'] + app
+                self.text_to_speech(res, self.langlist[1])
+            except:
+                res = self.strings[self.lang]['functions']['runapps']['failure'] + app
+                self.text_to_speech(res, self.langlist[1])
+        else: 
+            res = self.strings[self.lang]['functions']['runapps']['success'] + app
+            self.text_to_speech(res, self.langlist[1])
+
+        
 
         
     def switch_lang(self, lang):
@@ -163,9 +177,11 @@ if __name__ == "__main__":
             exit()
 
         if(ai.text.lower().split(" ")[0] in ai.strings[ai.lang]['wakewords']['runapps']):
-            res = ai.strings[ai.lang]['functions']['runapps']['success'] + ai.text.lower().split(" ")[1]
-            ai.text_to_speech(res, ai.langlist[1])
-            os.startfile(ai.text.lower().split(" ")[1])
+            try: 
+                ai.run_app(" ".join(ai.text.lower().split(" ")[1:]))
+            except IndexError as e:
+                print("zły indeks")
+            
             
 
         if(' '.join(ai.text.lower().split(" ")[:-1]) in ai.strings[ai.lang]['functions']['langswitch']['commands'] or ai.text.lower().split(" ")[0] in ai.strings[ai.lang]['functions']['langswitch']['commands'][-1]):
