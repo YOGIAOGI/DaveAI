@@ -19,7 +19,7 @@
             },
             "runapps":{
                 "success":"running app ",
-                "failure":"can't run app"
+                "failure":"can't run app "
             },
             "time":"It's $hour $minute.",
             "day":"Today its $date $mdayth of the $mon of the $year.",
@@ -130,8 +130,8 @@
                 "content":"Co chcesz zapisać w notatce?"
             },
             "runapps":{
-                "success": "uruchomiono aplikację",
-                "failure": "nie można uruchomić aplikacji"
+                "success": "uruchomiono aplikację ",
+                "failure": "nie można uruchomić aplikacji "
             },
             "time": "Jest $hour $minute.",
             "day":"Dzisiaj jest $date $mday $mon $year.",
@@ -241,7 +241,7 @@
 			},
 			"runapps":{
 				"success":"Aplicacion ejecutada con exito",
-				"failure":"No se pudo ejecutar la aplicacion"
+				"failure":"No se pudo ejecutar la aplicacion "
 			},
 			"time":"Son las $hour y $minute.",
 			"day":"Hoy es $date, dia $mday del mes $mon del año $year.",
@@ -288,7 +288,7 @@
 				"escribe esto",
 				"escribe una nota",
 				"nueva nota",
-				"Nota"
+				"nota"
 			],
 			"runapps":[
 				"en ejecucion",
