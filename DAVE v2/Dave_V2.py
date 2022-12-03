@@ -10,7 +10,8 @@ import threading
 # from PyQt5.QtGui import QMovie
 # from PyQt5.QtCore import Qt
 import json
-
+import pyautogui
+pyautogui.FAILSAFE = False
 
 
 class ChatBot():
@@ -139,6 +140,13 @@ class ChatBot():
         if self.lang == "ESP":
             self.langlist=['es-US',2]
 
+    def volup(self, vol):
+        for i in range(vol): 
+            pyautogui.press('volumeup')
+
+    def voldown(self, vol):
+        for i in range(vol): 
+            pyautogui.press('volumedown')
 
 
 if __name__ == "__main__":
@@ -198,3 +206,13 @@ if __name__ == "__main__":
                 ai.switch_lang("ESP")
                 res = ai.strings[ai.lang]['functions']['langswitch']['success'] + ai.strings[ai.lang]['functions']['langswitch']['langesp']
                 ai.text_to_speech(res, ai.langlist[1])
+
+        if(ai.text.lower().split(" ")[0] in ai.strings[ai.lang]['wakewords']['voldown']):
+            ai.voldown(int(ai.text.lower().split(" ")[-1]))
+            res = random.choice(ai.strings[ai.lang]['answers']['voldown']) + ai.text.lower().split(" ")[-1]
+            ai.text_to_speech(res, ai.langlist[1])
+
+        if(ai.text.lower().split(" ")[0] in ai.strings[ai.lang]['wakewords']['volup']):
+            ai.volup(int(ai.text.lower().split(" ")[-1]))
+            res = random.choice(ai.strings[ai.lang]['answers']['volup']) + ai.text.lower().split(" ")[-1]
+            ai.text_to_speech(res, ai.langlist[1])

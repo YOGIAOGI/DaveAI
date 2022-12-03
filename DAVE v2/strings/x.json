@@ -87,7 +87,15 @@
                 "what hour is it",
                 "hour"
             ]
-            
+            ,
+            "voldown":
+            [
+                "Turned the volume down by"
+            ],
+            "volup":
+            [
+                "Turned the volume up by "
+            ]
         },
         "answers":{
             "kys":[
@@ -108,7 +116,17 @@
             ,
             "system":
             "I am Dave, your own personal AI.\n           Software Version 0.0.3. Currently I am capable of telling day and time, writing notes down"
-            
+            ,
+            "voldown":
+            [
+                "Ściszono o ",
+                "Zmniejszono głośność o "
+            ],
+            "volup":
+            [
+                "Podgłośniono o ", 
+                "zwiększono głośność o "
+            ]
         }
     },
     "POL": {
@@ -196,6 +214,14 @@
                 "powiedz mi godzinę",
                 "która jest godzina",
                 "godzina"
+            ],
+            "volup":[
+                "zwiększ",
+                "podgłośnij"
+            ],
+            "voldown":[
+                "ścisz", 
+                "zmniejsz"
             ]
             
         },
@@ -218,7 +244,17 @@
             ,
             "system":
             "Jestem Dejw, twoja osobista sztuczna inteligencja.\n          Wersja oprogramowania 0.0.3. Obecnie jestem w stanie określić dzień i godzinę i zapisać notatki"
-            
+            ,
+            "voldown":
+            [
+                "Ściszono o ",
+                "Zmniejszono głośność o "
+            ],
+            "volup":
+            [
+                "Podgłośniono o ", 
+                "zwiększono głośność o "
+            ]
         }
     },
     "ESP": {
@@ -303,8 +339,15 @@
 				"tiempo",
 				"dime la hora",
 				"hora"
-			]
-			
+			],
+            "voldown":
+            [
+                "baja"
+            ],
+            "volup":
+            [
+                "sube"
+            ]
 		},
 		"answers":{
 			"kys":[
@@ -325,6 +368,15 @@
 			,
 			"system":
 			"Soy Dave, tu IA personal.\n Version de software 0.0.3. Actualmente soy capaz de decir el dia, la hora y escribir notas"
+            ,
+            "voldown":
+            [
+                "Volumen bajado a "
+            ],
+            "volup":
+            [
+                "Aumento de volumen a "
+            ]
         }
     }
 }
